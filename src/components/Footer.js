@@ -17,7 +17,7 @@ function Footer() {
           <h3></h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} William Kristiawan</h3>
+          <h3>-- {year} Muhammad Hasbiriza --</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
@@ -43,7 +43,7 @@ function Footer() {
             </li> */}
             <li className="social-icons">
               <a
-                href="https://www.linkedin.com/in/williamkristiawan/"
+                href="https://www.linkedin.com/in/muhammadhasbiriza/"
                 style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -53,7 +53,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.instagram.com/william.kristiawan"
+                href="https://www.instagram.com/hasbirizamuhammad/"
                 style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
