@@ -6,6 +6,9 @@ import bpkh2 from "../../Assets/Projects/bpkh2.jpg";
 import guyub from "../../Assets/Projects/guyub.jpg";
 import mitok from "../../Assets/Projects/mitok.jpg";
 import foodrecipe from "../../Assets/Projects/foodrecipe.jpg";
+import profile_hirejob from "../../Assets/Projects/profile_hirejob.png";
+import landingpage_hirejob from "../../Assets/Projects/landingpage_hirejob.png";
+import home_hirejob from "../../Assets/Projects/home_hirejob.png";
 import iotacompro from "../../Assets/Projects/iotacompro.jpg";
 import hiring from "../../Assets/Projects/hiring.jpg";
 import palma from "../../Assets/Projects/palma.jpg";
@@ -25,7 +28,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPaths={[hiring, guyub, mitok]}
+              imgPaths={[hiring,profile_hirejob,landingpage_hirejob,home_hirejob]}
               isBlog={false}
               title="Hiring Apps"
               description="
