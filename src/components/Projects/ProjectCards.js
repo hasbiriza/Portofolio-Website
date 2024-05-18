@@ -1,19 +1,30 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import Carousel from "react-bootstrap/Carousel";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 function ProjectCards(props) {
-  const { ghLinkFrontEnd, ghLinkBackEnd, demoLink, isBlog } = props;
+  const { ghLinkFrontEnd, ghLinkBackEnd, demoLink, isBlog, imgPaths } = props;
 
   const hasOneGitHubLink = (ghLinkFrontEnd && !ghLinkBackEnd) || (!ghLinkFrontEnd && ghLinkBackEnd);
 
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      <Carousel interval={3000}>
+        {imgPaths.map((path, index) => (
+          <Carousel.Item key={index}>
+            <img
+              className="d-block w-100"
+              src={path}
+              alt={`slide ${index}`}
+            />
+          </Carousel.Item>
+        ))}
+      </Carousel>
       <Card.Body>
         <Card.Title style={{ fontWeight: "bold" }}>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>

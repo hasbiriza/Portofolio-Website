@@ -25,7 +25,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={hiring}
+              imgPaths={[hiring, guyub, mitok]}
               isBlog={false}
               title="Hiring Apps"
               description="
@@ -40,7 +40,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={foodrecipe}
+              imgPaths={[foodrecipe, palma, yamaha]}
               isBlog={false}
               title="Mama Recipe"
               description="
@@ -55,7 +55,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={foodrecipe}
+              imgPaths={[foodrecipe, bpkh2]}
               isBlog={false}
               title="Blanja"
               description="
@@ -70,7 +70,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={foodrecipe}
+              imgPaths={[foodrecipe]}
               isBlog={false}
               title="MyGramAPP=API"
               description="
@@ -85,7 +85,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={foodrecipe}
+              imgPaths={[foodrecipe]}
               isBlog={false}
               title="Restoran Selera Nusantara"
               description="
@@ -97,16 +97,6 @@ function Projects() {
               demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
-          
-
-
-          
-
-         
-
-         
-
-         
         </Row>
       </Container>
     </Container>
