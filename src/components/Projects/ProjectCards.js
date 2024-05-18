@@ -7,6 +7,10 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 function ProjectCards(props) {
+  const { ghLinkFrontEnd, ghLinkBackEnd, demoLink, isBlog } = props;
+
+  const hasOneGitHubLink = (ghLinkFrontEnd && !ghLinkBackEnd) || (!ghLinkFrontEnd && ghLinkBackEnd);
+
   return (
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
@@ -21,26 +25,46 @@ function ProjectCards(props) {
         <Card.Text style={{ fontStyle: "italic" }}>{props.tools}</Card.Text>
         
         <Row className="mb-3">
-          <Col style={{ display: "flex", justifyContent: "center" }}>
-            <Button variant="primary" href={props.ghLinkFrontEnd} target="_blank">
-              <BsGithub /> &nbsp;
-              Front End
-            </Button>
-          </Col>
-          <Col style={{ display: "flex", justifyContent: "center" }}>
-            <Button variant="primary" href={props.ghLinkBackEnd} target="_blank">
-              <BsGithub /> &nbsp;
-              Back End
-            </Button>
-          </Col>
+          {ghLinkFrontEnd && !ghLinkBackEnd && (
+            <Col style={{ display: "flex", justifyContent: "center" }}>
+              <Button variant="primary" href={ghLinkFrontEnd} target="_blank">
+                <BsGithub /> &nbsp;
+                GitHub
+              </Button>
+            </Col>
+          )}
+          {ghLinkBackEnd && !ghLinkFrontEnd && (
+            <Col style={{ display: "flex", justifyContent: "center" }}>
+              <Button variant="primary" href={ghLinkBackEnd} target="_blank">
+                <BsGithub /> &nbsp;
+                GitHub
+              </Button>
+            </Col>
+          )}
+          {ghLinkFrontEnd && ghLinkBackEnd && (
+            <>
+              <Col style={{ display: "flex", justifyContent: "center" }}>
+                <Button variant="primary" href={ghLinkFrontEnd} target="_blank">
+                  <BsGithub /> &nbsp;
+                  Front End
+                </Button>
+              </Col>
+              <Col style={{ display: "flex", justifyContent: "center" }}>
+                <Button variant="primary" href={ghLinkBackEnd} target="_blank">
+                  <BsGithub /> &nbsp;
+                  Back End
+                </Button>
+              </Col>
+            </>
+          )}
         </Row>
 
-        {!props.isBlog && props.demoLink && (
+        {!isBlog && demoLink && (
           <Row style={{ marginTop: "20px" }}>
             <Col style={{ display: "flex", justifyContent: "center" }}>
               <Button
                 variant="primary"
-                href={props.demoLink}
+                href={demoLink}
                 target="_blank"
               >
                 <CgWebsite /> &nbsp;
