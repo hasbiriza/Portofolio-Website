@@ -3,6 +3,8 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 function ProjectCards(props) {
   return (
@@ -17,28 +19,39 @@ function ProjectCards(props) {
           {props.stack}
         </Card.Text>
         <Card.Text style={{ fontStyle: "italic" }}>{props.tools}</Card.Text>
-        {/* <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button> */}
-        {"\n"}
-        {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
+        
+        <Row className="mb-3">
+          <Col style={{ display: "flex", justifyContent: "center" }}>
+            <Button variant="primary" href={props.ghLinkFrontEnd} target="_blank">
+              <BsGithub /> &nbsp;
+              Front End
+            </Button>
+          </Col>
+          <Col style={{ display: "flex", justifyContent: "center" }}>
+            <Button variant="primary" href={props.ghLinkBackEnd} target="_blank">
+              <BsGithub /> &nbsp;
+              Back End
+            </Button>
+          </Col>
+        </Row>
 
         {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
-          </Button>
+          <Row style={{ marginTop: "20px" }}>
+            <Col style={{ display: "flex", justifyContent: "center" }}>
+              <Button
+                variant="primary"
+                href={props.demoLink}
+                target="_blank"
+              >
+                <CgWebsite /> &nbsp;
+                {"Demo"}
+              </Button>
+            </Col>
+          </Row>
         )}
       </Card.Body>
     </Card>
   );
 }
+
 export default ProjectCards;

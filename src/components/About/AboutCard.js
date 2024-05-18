@@ -12,7 +12,7 @@ function AboutCard() {
             <span className="purple">Muhammad Hasbiriza </span>
             from <span className="purple"> Bogor, Indonesia.</span>
             <br />
-            I am currently a Freelancer
+            I am graduated from IPB University 
             <br />
             I am also a student at Pamulang University
             <br />

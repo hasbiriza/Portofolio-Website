@@ -22,13 +22,7 @@ function Techstack() {
         <DiNodejs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiLaravel />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <TbBrandGolang />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiDotnet />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
