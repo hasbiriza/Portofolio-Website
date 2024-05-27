@@ -9,7 +9,11 @@ import foodrecipe from "../../Assets/Projects/foodrecipe.jpg";
 import profile_hirejob from "../../Assets/Projects/profile_hirejob.png";
 import landingpage_hirejob from "../../Assets/Projects/landingpage_hirejob.png";
 import home_hirejob from "../../Assets/Projects/home_hirejob.png";
-import iotacompro from "../../Assets/Projects/iotacompro.jpg";
+import profile_blanja from "../../Assets/Projects/profile_blanja.png";
+import product_blanja from "../../Assets/Projects/product_blanja.png";
+import login_blanja from "../../Assets/Projects/login_blanja.png";
+import checkout_blanja from "../../Assets/Projects/checkout_blanja.png";
+
 import hiring from "../../Assets/Projects/hiring.jpg";
 import palma from "../../Assets/Projects/palma.jpg";
 import yamaha from "../../Assets/Projects/yamaha.jpg";
@@ -58,7 +62,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPaths={[foodrecipe, bpkh2]}
+              imgPaths={[profile_blanja, product_blanja,login_blanja,checkout_blanja]}
               isBlog={false}
               title="Blanja"
               description="
