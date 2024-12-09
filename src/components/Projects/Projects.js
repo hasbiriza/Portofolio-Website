@@ -2,21 +2,21 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import bpkh2 from "../../Assets/Projects/bpkh2.jpg";
-import guyub from "../../Assets/Projects/guyub.jpg";
-import mitok from "../../Assets/Projects/mitok.jpg";
-import foodrecipe from "../../Assets/Projects/foodrecipe.jpg";
-import profile_hirejob from "../../Assets/Projects/profile_hirejob.png";
-import landingpage_hirejob from "../../Assets/Projects/landingpage_hirejob.png";
-import home_hirejob from "../../Assets/Projects/home_hirejob.png";
-import profile_blanja from "../../Assets/Projects/profile_blanja.png";
-import product_blanja from "../../Assets/Projects/product_blanja.png";
-import login_blanja from "../../Assets/Projects/login_blanja.png";
-import checkout_blanja from "../../Assets/Projects/checkout_blanja.png";
+import PEWORLD1 from "../../Assets/Projects/PEWORLD1.png";
+import PEWORLD2 from "../../Assets/Projects/PEWORLD2.png";
+import PEWORLD3 from "../../Assets/Projects/PEWORLD3.png";
+import PEWORLD4 from "../../Assets/Projects/PEWORLD4.png";
+import PEWORLD5 from "../../Assets/Projects/PEWORLD5.png";
+import FRECIPE1 from "../../Assets/Projects/FRECIPE1.jpg";
+import BLANJA1 from "../../Assets/Projects/BLANJA1.png";
+import BLANJA2 from "../../Assets/Projects/BLANJA2.png";
+import BLANJA3 from "../../Assets/Projects/BLANJA3.png";
+import BLANJA4 from "../../Assets/Projects/BLANJA4.png";
+import SNUSANTARA1 from "../../Assets/Projects/SNUSANTARA1.png";
+import SNUSANTARA2 from "../../Assets/Projects/SNUSANTARA2.png";
+import SNUSANTARA3 from "../../Assets/Projects/SNUSANTARA3.png";
+import SNUSANTARA4 from "../../Assets/Projects/SNUSANTARA4.png";
 
-import hiring from "../../Assets/Projects/hiring.jpg";
-import palma from "../../Assets/Projects/palma.jpg";
-import yamaha from "../../Assets/Projects/yamaha.jpg";
 
 function Projects() {
   return (
@@ -32,7 +32,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPaths={[hiring,profile_hirejob,landingpage_hirejob,home_hirejob]}
+              imgPaths={[PEWORLD1,PEWORLD2,PEWORLD3,PEWORLD4,PEWORLD5]}
               isBlog={false}
               title="Hiring Apps"
               description="
@@ -41,13 +41,13 @@ function Projects() {
               tools="Next JS, Bootstrap CSS , Gofiber (Golang Framework), PostgresSQL"
               ghLinkFrontEnd="https://github.com/hasbiriza/FE-HIREJOB"
               ghLinkBackEnd="https://github.com/hasbiriza/BE-HIREJOB"
-              demoLink="https://chatify-49.web.app/"
+              demoLink="https://peworld-hirejob.vercel.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPaths={[foodrecipe, palma, yamaha]}
+              imgPaths={[FRECIPE1]}
               isBlog={false}
               title="Mama Recipe"
               description="
@@ -62,7 +62,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPaths={[profile_blanja, product_blanja,login_blanja,checkout_blanja]}
+              imgPaths={[BLANJA1,BLANJA2,BLANJA3,BLANJA4]}
               isBlog={false}
               title="Blanja"
               description="
@@ -77,22 +77,20 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPaths={[foodrecipe]}
+              imgPaths={[FRECIPE1]}
               isBlog={false}
               title="MyGramAPP=API"
               description="
               Developed an immersive food recipe application that seamlessly integrates design elements using React.js and GoFiber. Ensured a visually appealing and intuitive interface, harmonizing design standards for a delightful user experience."
               stack="Tech Stack :"
               tools="Golang,  PostgresSQL"
-              ghLinkFrontEnd="https://github.com/hasbiriza/MyGramAPP-API"
-              // ghLinkBackEnd="https://github.com/hasbiriza/BE-Blanja"
-              demoLink="https://blogs.soumya-jit.tech/"
+              ghLinkBackEnd="https://github.com/hasbiriza/MyGramAPP-API"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPaths={[foodrecipe]}
+              imgPaths={[SNUSANTARA1,SNUSANTARA2,SNUSANTARA3,SNUSANTARA4]}
               isBlog={false}
               title="Restoran Selera Nusantara"
               description="
