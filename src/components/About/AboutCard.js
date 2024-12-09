@@ -14,7 +14,8 @@ function AboutCard() {
             <br />
             I am graduated from IPB University 
             <br />
-            I am also a student at Pamulang University
+            <br />
+            A full-stack web developer with over 1.5 years of experience, combining formal bootcamp training and hands-on professional expertise in both frontend and backend development. Proficient in building dynamic, responsive, and interactive web applications using HTML, CSS, JavaScript, React.js, and Next.js, along with backend technologies like Node.js, Golang, and Shopify Liquid. Experienced in developing and customizing high-performance e-commerce solutions on Shopify, optimizing site functionality, and integrating third-party APIs to enhance user experience and business operations. Knowledgeable in server-side logic and deployment processes, with an understanding of security, scalability, and performance optimization, continuously developing hands-on expertise. A creative problem-solver with a growth mindset, I am driven to deliver high-quality web solutions that are both user-centered and business-oriented, continually learning and staying ahead of emerging technologies to create innovative, adaptable solutions that meet the evolving needs of clients and users.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!

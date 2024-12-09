@@ -71,7 +71,7 @@ function Projects() {
               tools="React JS, Bootstrap CSS , Gofiber (Golang Framework), PostgresSQL"
               ghLinkFrontEnd="https://github.com/hasbiriza/FE-Blanja"
               // ghLinkBackEnd="https://github.com/hasbiriza/BE-Blanja"
-              demoLink="https://blogs.soumya-jit.tech/"
+              demoLink="https://blanjaready.vercel.app/"
             />
           </Col>
 
@@ -100,8 +100,7 @@ function Projects() {
               stack="Tech Stack :"
               tools="React JS, Bootstrap CSS , Html"
               ghLinkFrontEnd="https://github.com/hasbiriza/RestoranSeleraNusantara"
-              // ghLinkBackEnd="https://github.com/hasbiriza/BE-Blanja"
-              demoLink="https://blogs.soumya-jit.tech/"
+              demoLink="https://seleranusantara.vercel.app/"
             />
           </Col>
         </Row>
